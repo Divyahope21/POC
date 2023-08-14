@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Observable, Subject, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, throwError } from 'rxjs';
 import { IHotel } from '../models/hotel';
 import { catchError } from 'rxjs/operators';
 
@@ -15,6 +15,7 @@ export class ServiceService {
     status: 500,
     message: 'Sorry! Something went wrong :('
   }
+  public selectedRestaurant$ = new BehaviorSubject(null);
 
   constructor(private httpClient: HttpClient) { }
 
@@ -22,6 +23,7 @@ export class ServiceService {
     return this.httpClient.get<IHotel[]>(this.url).pipe(
       catchError((err: HttpErrorResponse) => {
         return throwError(err || this.customError);
+     
       })
     );
   }
@@ -32,5 +34,9 @@ export class ServiceService {
         return throwError(err || this.customError);
       })
     );
+  }
+
+  public getSelectedRestaurant() {
+    return
   }
 }

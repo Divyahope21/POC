@@ -19,11 +19,12 @@ import { ChennaiComponent } from './chennai/chennai.component';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { NoidaComponent } from './noida/noida.component';
 import { BangaloreComponent } from './bangalore/bangalore.component';
 import { HyderabadComponent } from './hyderabad/hyderabad.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ListComponent } from './list/list.component';
 
 
 
@@ -36,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     ChennaiComponent,
     NoidaComponent,
     BangaloreComponent,
-    HyderabadComponent
+    HyderabadComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

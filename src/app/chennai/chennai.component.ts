@@ -9,6 +9,20 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   encapsulation: ViewEncapsulation.Emulated
 })
 export class ChennaiComponent {
+  shops: any[] = [];
+  selectedShop: any;
+
+  ngOnInit() {
+    this.loadShops();
+  }
+
+  loadShops() {
+    //this.shops = shopsData;
+  }
+
+  showShopItems(shop: any) {
+    this.selectedShop = shop;
+  }
 
   
 

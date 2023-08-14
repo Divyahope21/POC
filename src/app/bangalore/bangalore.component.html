@@ -10,14 +10,14 @@
         <img
                     mat-card-image
                     [src]="card.feature_image" alt="Card image cap"                 
-                  />
+                     />
         <mat-card-content>
           <p>Rating: <span class="rating-star">{{'★'.repeat((card.rating))}}</span></p>
           <p>Review: {{card.reviews}}</p>
         </mat-card-content>
         <mat-card-actions>
             {{card.id|json}}
-            <button mat-raised-button color="warn" (onclick)="getHotel($event)">View Shop</button>
+            <button mat-raised-button color="warn"  (click)="getHotel(card)">View Shop</button>        
         </mat-card-actions>
       </mat-card>
       </div>

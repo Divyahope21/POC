@@ -1,0 +1,23 @@
+
+.menu-card {
+    margin-top: 20px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+  }
+  
+  .menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .menu-item-price {
+    font-weight: bold;
+  }
+  
+  .menu-item-description {
+    color: #555;
+  }
+  
