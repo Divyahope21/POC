@@ -15,11 +15,11 @@ import {  MatSnackBarModule } from '@angular/material/snack-bar';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { ShopsComponent } from './shops/shops.component';
 import {MatChipsModule} from '@angular/material/chips';
-
+import {InMemoryWebApiModule} from 'angular-in-memory-web-api';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { NoidaComponent } from './noida/noida.component';
 import { BangaloreComponent } from './bangalore/bangalore.component'; 
 import { HyderabadComponent } from './hyderabad/hyderabad.component';
@@ -27,6 +27,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { ChennaiComponent } from './chennai/chennai.component';
 import { ListComponent } from './list/list.component';
 import { DeleteComponent } from './delete/delete.component';
+import { EditComponent } from './edit/edit.component';
+import { HomeComponent } from './home/home.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { VendorLoginComponent } from './vendor-login/vendor-login.component';
+import { ShopDetailsComponent } from './shop-details/shop-details.component';
+// import { MockApiService } from './service/mock-api.service';
 
 
 
@@ -42,7 +48,13 @@ import { DeleteComponent } from './delete/delete.component';
     BangaloreComponent,
     HyderabadComponent,
     ListComponent,
-    DeleteComponent
+    DeleteComponent,
+   EditComponent,
+   HomeComponent,
+   AdminLoginComponent,
+   VendorLoginComponent,
+   ShopDetailsComponent    
+   
   ],
   imports: [
     BrowserModule,
@@ -60,7 +72,7 @@ import { DeleteComponent } from './delete/delete.component';
     FlexLayoutModule,
     MatSnackBarModule,
     HttpClientModule,
-  
+    // InMemoryWebApiModule.forRoot(MockApiService),
     
  
     

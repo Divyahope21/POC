@@ -108,7 +108,6 @@ export class ServiceService {
   public getSelectedRestaurant() {
     return
   }
-
 }
 
 
