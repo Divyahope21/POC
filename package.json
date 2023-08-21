@@ -26,6 +26,7 @@
     "@material/image-list": "^15.0.0-canary.b994146f6.0",
     "@material/snackbar": "^15.0.0-canary.b994146f6.0",
     "@material/tooltip": "^10.0.0-canary.ea55b87ca.0",
+    "angular-in-memory-web-api": "^0.16.0",
     "rxjs": "~7.8.0",
     "swagger-ui-dist": "^5.3.1",
     "tslib": "^2.3.0",

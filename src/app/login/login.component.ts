@@ -28,7 +28,7 @@ export class LoginComponent  {
     }
    
   
-    // Helper function to check for specific errors
+
     hasError(controlName: string, errorName: string): boolean {
       return this.form.get(controlName)?.hasError(errorName);
       this.form.reset();
@@ -37,7 +37,7 @@ export class LoginComponent  {
     onSubmit() {
       if (this.form.valid) {
         console.log('Form submitted successfully!');
-        // Add your form submission logic here
+       
         this.router.navigate(['/shops']);
         this.form.reset();
         this.form.reset();

@@ -1,0 +1,73 @@
+<mat-toolbar class="nav-bar" color="primary">
+    <mat-toolbar-row>
+        <span>JUSTEAT</span>
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-card class="example-card">
+<mat-card class="login-card">
+    <mat-card-header>
+    <mat-card-title>Vendor Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+    <form *ngIf="showLogin" (ngSubmit)="login()" #loginForm="ngForm">
+        <mat-form-field>
+            <input matInput type="text" name="id" [(ngModel)]="loginFormValue.id" placeholder="vendor ID" required>
+            </mat-form-field>
+    <mat-form-field>
+    <input matInput type="text" name="username" [(ngModel)]="loginFormValue.username" placeholder="Username" required>
+    </mat-form-field>
+    <mat-form-field>
+    <input matInput type="password" name="password" [(ngModel)]="loginFormValue.password" placeholder="Password" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Login</button>
+    </form>
+    <form *ngIf="showRegistration" (ngSubmit)="registerVendor()" #registrationForm="ngForm">
+        <mat-form-field>
+        <input matInput type="text" name="id" [(ngModel)]="newVendor.id" placeholder="Vendor ID" required>
+        </mat-form-field>
+        <mat-form-field>
+        <input matInput type="text" name="username" [(ngModel)]="newVendor.username" placeholder="Username" required>
+        </mat-form-field>
+        <mat-form-field>
+        <input matInput type="password" name="password" [(ngModel)]="newVendor.password" placeholder="Password" required>
+        </mat-form-field>
+        <mat-form-field>
+        <input matInput type="text" name="shopName" [(ngModel)]="newVendor.shopName" placeholder="Shop Name" required>
+        </mat-form-field>
+        <form> <button mat-raised-button color="primary" (click)="registerVendor()">Register</button>
+        </form>
+        
+        </form>
+        <button mat-raised-button color="accent" *ngIf="showLogin" (click)="showRegistrationForm()">Register vendor</button>
+       
+        </mat-card-content>
+        </mat-card>
+       
+        <!-- <ng-container *ngIf="showShops">
+            <h2>{{ selectedShop.shopName }}</h2>
+            <ul>
+            <li *ngFor="let dish of selectedShop.dishes; let i = index">
+                 {{ dish.dishName }} - Price: {{ dish.price }} - Quantity: {{ dish.quantity }}
+            <button mat-icon-button >
+            <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button>
+            <mat-icon>delete</mat-icon>
+            </button>
+            </li>
+            </ul>
+            
+            <h3>Add Dish</h3>
+            <form (submit)="addDish()">
+            <mat-form-field>
+            <input matInput type="text" name="dishName" [(ngModel)]="newDish.dishName" placeholder="Dish Name" required>
+            </mat-form-field>
+            <mat-form-field>
+            <input matInput type="number" name="price" [(ngModel)]="newDish.price" placeholder="Price" required>
+            </mat-form-field>
+            <mat-form-field>
+            <input matInput type="number" name="quantity" [(ngModel)]="newDish.quantity" placeholder="Quantity" required>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">Add Dish</button>
+            </form>
+            </ng-container> -->

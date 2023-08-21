@@ -1,0 +1,7 @@
+<h2>{{ selectedVendor.shopName }} Details</h2>
+<ul>
+<li *ngFor="let dish of selectedVendor.dishes">
+   {{ dish.dishName }} - Price: {{ dish.price }} - Quantity: {{ dish.quantity }}
+<!-- Add buttons for edit and delete here -->
+</li>
+</ul>

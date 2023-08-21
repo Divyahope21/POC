@@ -1,0 +1,69 @@
+.nav-bar {
+    width: 100%;
+    background-color: rgb(126, 6, 6);
+}
+.example-spacer{
+flex: 1 1 auto;
+width:50%;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+      background-color: transparent;
+  }
+   
+  }
+  
+  .form-field {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+    background-color: transparent;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .mdc-card__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 52px;
+    padding: 13px;
+    padding-left: 44%;
+    border-radius: 20%;
+   
+}
+.mat-mdc-card-title, .mat-mdc-card-subtitle {
+    display: block;
+    margin: 0;
+    padding-left: 1110%;
+   
+}
+.example-card {
+   background-image: url('src\assets\Food_Doodle_Background.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Set the desired height for the card src\assets\Food_Doodle_Background.png C:\Users\ramsuratkumar_s\OneDrive - HCL Technologies Ltd\Desktop\HungerboxNew\FoodAngular\src\assets\Food_Doodle_Background.png*/
+    
+  }
+  .home{
+    align-items: center;
+    justify-content: space-around ;
+    display: flex;
+    height: 70%;
+  }
+
+
